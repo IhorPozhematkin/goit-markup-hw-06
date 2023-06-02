@@ -446,7 +446,7 @@ input {
   position: absolute;
   top: 26px;
   left: 16px;
-  width: 16px;
+  width: 18px;
   height: 24px;
 }
 .input-modal:focus .icon-modal {
@@ -463,6 +463,15 @@ input {
   resize: none;
   width: 360px;
   height: 120px;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.textarea-modal:focus {
+  border-color: #4d5ae5;
 }
 .textarea-modal::placeholder {
   font-size: 12px;
@@ -697,33 +706,33 @@ input {
 .icon-footer {
   fill: var(--color_white_two);
 }
+.text-form {
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: var(--color_white);
+}
 .form-footer {
   display: flex;
   align-items: flex-end;
   gap: 24px;
-}
-.label-footer {
-  font-weight: 500;
-  color: var(--color_white);
 }
 .input-footer {
   display: block;
   min-width: 264px;
   height: 40px;
   border-radius: 4px;
-  margin-top: 16px;
-  background-color: var(--color_two);
+  background-color: transparent;
   border: 1px solid #ffffff;
   padding: 8px 16px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--color_white);
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .input-footer::placeholder {
   color: var(--color_white);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
 }
 .input-footer:focus-within {
   border: 1px solid var(--color_blue);
