@@ -460,7 +460,7 @@ input {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 18px;
   height: 24px;
 }
@@ -495,7 +495,9 @@ input {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
-
+.checkbox-cont {
+  margin-bottom: 24px;
+}
 .checkbox-modal {
   font-size: 12px;
   line-height: 1.17;
