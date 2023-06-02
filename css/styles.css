@@ -177,9 +177,7 @@ input {
 .sectiontwo-studio {
   padding: 120px 0;
 }
-.titletwo-studio,
-.titleone-portfolio,
-.input-checkbox {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
