@@ -468,10 +468,10 @@
           novalidate
         >
           <div class="input-form">
-            <label class="form-label" for="username"> Name</label>
+            <label class="form-label" for="user-name"> Name</label>
             <div class="input-row">
               <input
-                name="username"
+                name="user-name"
                 class="input-modal"
                 id="user-name"
                 type="text"
@@ -504,9 +504,10 @@
               </svg>
             </div>
           </div>
-          <div>
-            <label class="form-textarea" for="user-comment">Comment </label>
+          <div class="textarea-block">
+            <label class="form-label" for="user-comment">Comment </label>
             <textarea
+              name="user-comment"
               id="user-comment"
               class="textarea-modal"
               rows="5"
@@ -518,15 +519,16 @@
 
           <div class="checkbox-cont">
             <input
+              class="input-checkbox"
               id="user-privacy"
               type="checkbox"
-              name="privacy"
-              value="privacy"
-              checked
+              name="user-privacy"
+              value="true"
+              visually-hidden
             />
             <label for="user-privacy" class="checkbox-modal"
               ><span class="checkbox-block"
-                ><svg class="icon-checkbox" width="16" height="16">
+                ><svg class="icon-checkbox" width="10" height="8">
                   <use
                     href="./images/icons.svg#icon-Checkbox"
                   ></use></svg></span
