@@ -24,7 +24,7 @@
   <body>
     <!------------------header------------------>
     <header class="header">
-      <div class="container header-container">
+      <div class="container header-container mobile-container">
         <nav class="nav">
           <a class="logo-link link" href="./index.html"
             >Web<span class="logoblack-text">Studio</span></a
@@ -59,6 +59,15 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggleicon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!---------------main-portfolio------------->
@@ -344,5 +353,85 @@
         </div>
       </div>
     </footer>
+    <!---------------- mobile-menu--------------->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="mobile-iconclose" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu">
+        <nav class="nav">
+          <ul class="menu-list flex-column">
+            <li class="menu-item">
+              <a class="menu-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link mobile-active" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href>Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="address">
+          <ul class="address-list flex-column">
+            <li>
+              <a class="address-link link tel-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a
+                class="address-link link mail-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="socialteam-list">
+          <li class="socialteam-item">
+            <a class="socialteam-link" href>
+              <svg class="socialteam-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socialteam-item">
+            <a class="socialteam-link" href>
+              <svg class="socialteam-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socialteam-item">
+            <a class="socialteam-link" href>
+              <svg class="socialteam-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socialteam-item">
+            <a class="socialteam-link" href>
+              <svg class="socialteam-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
