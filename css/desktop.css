@@ -575,7 +575,10 @@ button {
   border: none;
   border-radius: 50%;
 }
-
+.menu-list {
+  display: flex;
+  gap: 40px;
+}
 .mobile-menu {
   position: absolute;
   height: 100%;

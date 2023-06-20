@@ -92,6 +92,48 @@ button {
 .logoblack-text {
   color: var(--color-two);
 }
+.menu-list {
+  display: flex;
+  gap: 40px;
+}
+.menu-link {
+  padding: 24px 0;
+  color: var(--color-two);
+  font-weight: 500;
+  transition: color 250ms var(--cubic-bezier);
+}
+.page-active {
+  position: relative;
+  color: var(--color-accent);
+  transition: color 250ms var(--cubic-bezier);
+}
+.menu-list .menu-link.page-active::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--color-accent);
+}
+.address {
+  margin-left: auto;
+  font-style: normal;
+}
+.address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.address-link {
+  color: var(--color-one);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  transition: color 250ms var(--cubic-bezier);
+}
 /*---------------main-studio-------------*/
 
 /*-----------hero------------------*/
@@ -638,12 +680,9 @@ button {
 .mobile-menu {
   position: absolute;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: block;
 }
-.menu-list.flex-column,
-.address-list.flex-column {
+.flex-column {
   flex-direction: column;
 }
 .mobile-menu .nav {
@@ -656,15 +695,15 @@ button {
   margin-left: 0;
   margin-bottom: 48px;
 }
-.mail-link {
+.mobile-menu .mail-link {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--color-one);
 }
-.tel-link {
+.mobile-menu .tel-link {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 26px;
   line-height: 1.11;
   color: var(--color-blue);
 }
@@ -672,7 +711,8 @@ button {
   color: var(--color-accent);
 }
 .mobile-menu .socialteam-list {
-  gap: 56px;
+  gap: 24px;
+  justify-content: flex-start;
 }
 /*------------------ @media ------------------*/
 @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -685,9 +725,9 @@ button {
       url(../images/studio/people-office@2x.jpg);
   }
 }
-@media (max-width: 767px) {
-  .menu-list,
-  .address {
+@media screen and (max-width: 767px) {
+  .header .menu-list,
+  .header .address {
     display: none;
   }
 }
@@ -706,6 +746,12 @@ button {
     width: 408px;
     height: 584px;
   }
+  .mobile-menu .socialteam-list {
+    gap: 56px;
+  }
+  .mobile-menu .tel-link {
+    font-size: 36px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -721,48 +767,7 @@ button {
     display: block;
     margin-right: 76px;
   }
-  .menu-list {
-    display: flex;
-    gap: 40px;
-  }
-  .menu-link {
-    padding: 24px 0;
-    color: var(--color-two);
-    font-weight: 500;
-    transition: color 250ms var(--cubic-bezier);
-  }
-  .page-active {
-    position: relative;
-    color: var(--color-accent);
-    transition: color 250ms var(--cubic-bezier);
-  }
-  .menu-list .menu-link.page-active::after {
-    content: "";
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--color-accent);
-  }
-  .address {
-    margin-left: auto;
-    font-style: normal;
-  }
-  .address-list {
-    display: flex;
-    flex-direction: column;
-    padding: 16px 0;
-  }
-  .address-link {
-    color: var(--color-one);
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    transition: color 250ms var(--cubic-bezier);
-  }
+
   .hero-section {
     max-width: 1157px;
   }
@@ -831,6 +836,10 @@ button {
     max-width: 530px;
     align-items: flex-start;
     padding: 0;
+  }
+  .address-list {
+    padding: 16px 0;
+    display: block;
   }
 }
 @media screen and (min-width: 1158px) {
