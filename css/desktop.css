@@ -379,6 +379,7 @@ button {
   position: absolute;
   top: 24px;
   right: 24px;
+  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -427,7 +428,7 @@ button {
 }
 .modal-input {
   display: block;
-  width: 360px;
+  width: 100%;
   height: 40px;
   padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -457,7 +458,7 @@ button {
 }
 .modal-textarea {
   display: block;
-  width: 360px;
+  width: 100%;
   height: 120px;
   padding: 8px 16px;
   border: 1px solid rgba(46, 47, 66, 0.2);
@@ -552,65 +553,66 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 80px 0 40px 40px;
   background-color: var(--color-white);
-  z-index: 999;
-  transform: translateX(100%);
-  transition: transform 250ms var(--cubic-bezier);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  transition: transform 250ms var(--cubic-bezier);
+  transform: translateX(100%);
 }
 .menu-container.is-open {
   transform: translateX(0);
 }
 .menu-toggle.js-open-menu {
-  min-height: 22px;
-  min-width: 32px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 22px;
   margin: 0;
   padding: 0;
-  background-color: transparent;
   border: none;
   border-radius: 50%;
+  background-color: transparent;
 }
 .menu-list {
   display: flex;
   gap: 40px;
 }
 .mobile-menu {
-  position: absolute;
-  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 80px 0 40px 40px;
 }
 .menu-list.flex-column,
 .address-list.flex-column {
   flex-direction: column;
 }
-.mobile-menu .nav {
+.mobile-menu .menu-link {
+  margin-bottom: auto;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  margin-bottom: auto;
 }
 .mobile-menu .address {
-  margin-left: 0;
   margin-bottom: 48px;
+  margin-left: 0;
 }
 .mail-link {
+  color: var(--color-one);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: var(--color-one);
 }
 .tel-link {
+  color: var(--color-blue);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  color: var(--color-blue);
 }
 .mobile-menu .mobile-active {
   color: var(--color-accent);

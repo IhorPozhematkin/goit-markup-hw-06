@@ -58,10 +58,10 @@ button {
 }
 /*-----------header----------*/
 .header {
+  padding: 24px 0;
   border-bottom: 1px solid var(--color-border);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  padding: 24px 0;
 }
 .header-container {
   display: flex;
@@ -72,8 +72,8 @@ button {
 }
 .nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 .logo-link {
   color: var(--color-blue);
@@ -210,10 +210,10 @@ button {
   transition: opacity 500ms linear 250ms;
 }
 .benefits-boxicon {
-  display: none;
   position: absolute;
   top: 24px;
   left: 100px;
+  display: none;
   opacity: 0;
   transition: opacity 500ms linear 250ms, transform 500ms linear 250ms;
   transform: rotate(0deg) scale(0);
@@ -352,9 +352,9 @@ button {
 }
 .socialfooter-text,
 .subscribefooter-text {
-  font-weight: 500;
   margin-bottom: 16px;
   color: var(--color-white);
+  font-weight: 500;
 }
 .socialfooter-list {
   display: flex;
@@ -457,14 +457,14 @@ button {
   pointer-events: none;
 }
 .modal {
+  position: absolute;
+  top: 680px;
+  left: 50%;
+  overflow: scroll;
   width: 95%;
   max-width: 392px;
   height: 95%;
   max-height: 584px;
-  overflow: scroll;
-  position: absolute;
-  top: 680px;
-  left: 50%;
   padding: 72px 24px 24px;
   border-radius: 4px;
   background-color: var(--color-whitethree);
@@ -493,7 +493,6 @@ button {
   color: var(--color-two);
   transition: background-color 250ms var(--cubic-bezier),
     border 250ms var(--cubic-bezier);
-  z-index: 999;
 }
 .modal-buttonclose:hover,
 .modal-buttonclose:focus {
@@ -528,7 +527,7 @@ button {
 }
 .modal-input {
   display: block;
-  width: 360px;
+  width: 100%;
   height: 40px;
   padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -558,7 +557,7 @@ button {
 }
 .modal-textarea {
   display: block;
-  width: 360px;
+  width: 100%;
   height: 120px;
   padding: 8px 16px;
   border: 1px solid rgba(46, 47, 66, 0.2);
@@ -654,35 +653,35 @@ button {
   width: 100%;
   height: 100%;
   background-color: var(--color-white);
-  transform: translateX(100%);
-  transition: transform 250ms var(--cubic-bezier);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  transition: transform 250ms var(--cubic-bezier);
+  transform: translateX(100%);
 }
 .menu-container.is-open {
   transform: translateX(0);
 }
 .menu-toggle.js-open-menu {
-  min-height: 22px;
-  min-width: 32px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 22px;
   margin: 0;
   padding: 0;
-  background-color: transparent;
   border: none;
   border-radius: 50%;
+  background-color: transparent;
 }
 .mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   padding: 80px 0 40px 40px;
-  display: flex;
-  flex-direction: column;
 }
 .flex-column {
   flex-direction: column;
@@ -690,26 +689,26 @@ button {
 .mobile-contacts {
   margin-top: auto;
 }
-.mobile-menu .nav {
+.mobile-menu .menu-link {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
 }
 .mobile-menu .address {
-  margin-left: 0;
   margin-bottom: 48px;
+  margin-left: 0;
 }
 .mobile-menu .mail-link {
+  color: var(--color-one);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: var(--color-one);
 }
 .mobile-menu .tel-link {
+  color: var(--color-blue);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.11;
-  color: var(--color-blue);
 }
 .mobile-menu .mobile-active {
   color: var(--color-accent);
@@ -784,8 +783,8 @@ button {
     margin-top: 36px;
   }
   .benefits-list {
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 72px 24px;
   }
   .benefits-item,
@@ -796,8 +795,8 @@ button {
     text-align: start;
   }
   .team-list {
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 64px 24px;
   }
   .customers-list {
@@ -834,16 +833,16 @@ button {
     padding: 0;
   }
   .footer > .container {
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 72px 24px;
-    max-width: 530px;
     align-items: flex-start;
+    max-width: 530px;
     padding: 0;
   }
   .address-list {
-    padding: 16px 0;
     display: block;
+    padding: 16px 0;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -947,9 +946,9 @@ button {
     color: var(--color-accent);
   }
   .footer > .container {
-    align-items: baseline;
     flex-direction: row;
     gap: 80px;
+    align-items: baseline;
   }
   .footer {
     padding: 100px 0;
