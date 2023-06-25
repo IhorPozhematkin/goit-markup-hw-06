@@ -493,6 +493,7 @@ button {
   color: var(--color-two);
   transition: background-color 250ms var(--cubic-bezier),
     border 250ms var(--cubic-bezier);
+  z-index: 999;
 }
 .modal-buttonclose:hover,
 .modal-buttonclose:focus {

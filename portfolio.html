@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      rel="stylesheet"
       integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="./css/styles.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -61,8 +61,8 @@
         </address>
         <button
           class="menu-toggle js-open-menu"
-          aria-expanded="false"
           aria-controls="mobile-menu"
+          aria-expanded="false"
         >
           <svg class="menu-toggleicon" width="32" height="22">
             <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
@@ -92,7 +92,7 @@
           <!---------------projects------------->
           <ul class="projects-list">
             <li class="projects-item">
-              <a class="projects-link link" href="">
+              <a class="projects-link link" href>
                 <div class="projects-overlay">
                   <img
                     src="./images/portfolio/banking.jpg"
@@ -116,7 +116,7 @@
               </a>
             </li>
             <li class="projects-item">
-              <a class="projects-link link" href="">
+              <a class="projects-link link" href>
                 <div class="projects-overlay">
                   <img
                     src="./images/portfolio/cashless.jpg"
@@ -137,7 +137,7 @@
               </a>
             </li>
             <li class="projects-item">
-              <a class="projects-link link" href="">
+              <a class="projects-link link" href>
                 <div class="projects-overlay">
                   <img
                     src="./images/portfolio/meditation.jpg"
@@ -158,7 +158,7 @@
               </a>
             </li>
             <li class="projects-item">
-              <a class="projects-link link" href="">
+              <a class="projects-link link" href>
                 <div class="projects-overlay">
                   <img
                     src="./images/portfolio/taxi.jpg"
@@ -179,7 +179,7 @@
               </a>
             </li>
             <li class="projects-item">
-              <a class="projects-link link" href="">
+              <a class="projects-link link" href>
                 <div class="projects-overlay">
                   <img
                     src="./images/portfolio/screen.jpg"
@@ -200,7 +200,7 @@
               </a>
             </li>
             <li class="projects-item">
-              <a class="projects-link link" href="">
+              <a class="projects-link link" href>
                 <div class="projects-overlay">
                   <img
                     src="./images/portfolio/online.jpg"
@@ -221,7 +221,7 @@
               </a>
             </li>
             <li class="projects-item">
-              <a class="projects-link link" href="">
+              <a class="projects-link link" href>
                 <div class="projects-overlay">
                   <img
                     src="./images/portfolio/instagram.jpg"
@@ -242,7 +242,7 @@
               </a>
             </li>
             <li class="projects-item">
-              <a class="projects-link link" href="">
+              <a class="projects-link link" href>
                 <div class="projects-overlay">
                   <img
                     src="./images/portfolio/organic.jpg"
@@ -263,7 +263,7 @@
               </a>
             </li>
             <li class="projects-item">
-              <a class="projects-link link" href="">
+              <a class="projects-link link" href>
                 <div class="projects-overlay">
                   <img
                     src="./images/portfolio/fresh.jpg"
@@ -289,7 +289,7 @@
     </main>
     <!---------------footer------------->
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container">
         <div class="infofooter">
           <a class="logo-link link" href="./index.html"
             >Web<span class="logowhite-text">Studio</span></a
@@ -376,62 +376,63 @@
             </li>
           </ul>
         </nav>
-
-        <address class="address">
-          <ul class="address-list flex-column">
-            <li>
-              <a class="address-link link tel-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
+        <div class="mobile-contacts">
+          <address class="address">
+            <ul class="address-list flex-column">
+              <li>
+                <a class="address-link link tel-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a
+                  class="address-link link mail-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="socialteam-list">
+            <li class="socialteam-item">
+              <a class="socialteam-link" href>
+                <svg class="socialteam-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <a
-                class="address-link link mail-link"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+            <li class="socialteam-item">
+              <a class="socialteam-link" href>
+                <svg class="socialteam-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socialteam-item">
+              <a class="socialteam-link" href>
+                <svg class="socialteam-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socialteam-item">
+              <a class="socialteam-link" href>
+                <svg class="socialteam-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-        <ul class="socialteam-list">
-          <li class="socialteam-item">
-            <a class="socialteam-link" href>
-              <svg class="socialteam-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socialteam-item">
-            <a class="socialteam-link" href>
-              <svg class="socialteam-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socialteam-item">
-            <a class="socialteam-link" href>
-              <svg class="socialteam-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socialteam-item">
-            <a class="socialteam-link" href>
-              <svg class="socialteam-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </div>
 
     <script
-      defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      defer
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="./js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js" defer></script>
   </body>
 </html>
