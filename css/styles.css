@@ -727,7 +727,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 16px 24px;
-  justify-content: center;
+  justify-content: start;
   margin-bottom: 48px;
 }
 .buttons-item {
@@ -760,9 +760,6 @@ button {
   flex-direction: column;
   justify-content: center;
   gap: 48px;
-}
-.projects-item {
-  max-width: 396px;
 }
 .projects-item:hover,
 .projects-item:focus {
@@ -854,6 +851,9 @@ button {
   .mobile-menu .tel-link {
     font-size: 36px;
   }
+  .buttons-list {
+    justify-content: center;
+  }
   .projects-titletwo {
     font-size: 20px;
   }
@@ -937,6 +937,16 @@ button {
   .buttons-item {
     height: 48px;
     padding: 12px 24px;
+  }
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    gap: 72px 24px;
+  }
+  .projects-item {
+    width: calc((100% - 24px) / 2);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
@@ -1095,5 +1105,25 @@ button {
   }
   .buttons-list {
     margin-bottom: 72px;
+  }
+  .projects-list {
+    gap: 48px 24px;
+  }
+  .projects-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .projects-link {
+    border: none;
+    box-shadow: none;
+  }
+  .projects-linkbox {
+    border: 1px solid var(--color-border);
+    border-top: none;
+  }
+  .projects-overlay {
+    overflow: hidden;
+  }
+  .projects-overlaytext {
+    display: block;
   }
 }
