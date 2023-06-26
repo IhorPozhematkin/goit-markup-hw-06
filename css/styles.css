@@ -145,7 +145,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/studio/people-office.jpg);
+    url(../images/studio/people-office-mob.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -458,7 +458,7 @@ button {
 }
 .modal {
   position: absolute;
-  top: 680px;
+  top: 50%;
   left: 50%;
   overflow: scroll;
   width: 95%;
@@ -471,10 +471,10 @@ button {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms var(--cubic-bezier);
-  transform: translate(-50%, -100%) scaleY(1);
+  transform: translate(-50%, -50%) scaleY(1);
 }
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -100%) scaleY(0);
+  transform: translate(-50%, -50%) scaleY(0);
 }
 .modal-buttonclose,
 .menu-toggle.js-close-menu {
@@ -727,8 +727,9 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 16px 24px;
-  justify-content: start;
+  justify-content: flex-start;
   margin-bottom: 48px;
+  width: 95%;
 }
 .buttons-item {
   align-items: center;
@@ -815,13 +816,14 @@ button {
 }
 /*------------------ @media ------------------*/
 @media screen and (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/studio/people-office@2x.jpg);
+      url(../images/studio/people-office-mob@2x.jpg);
   }
 }
 @media screen and (max-width: 767px) {
@@ -851,14 +853,22 @@ button {
   .mobile-menu .tel-link {
     font-size: 36px;
   }
-  .buttons-list {
-    justify-content: center;
-  }
   .projects-titletwo {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/studio/people-office-tab@2x.jpg);
+    }
+  }
   .container {
     width: 768px;
   }
@@ -875,6 +885,11 @@ button {
 
   .hero-section {
     max-width: 1157px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/studio/people-office-tab.jpg);
   }
   .hero-titleone {
     max-width: 496px;
@@ -930,6 +945,7 @@ button {
     padding: 64px 0 96px;
   }
   .buttons-list {
+    justify-content: center;
     flex-wrap: nowrap;
     gap: 24px;
     margin-bottom: 64px;
@@ -970,6 +986,17 @@ button {
   }
 }
 @media screen and (min-width: 1158px) {
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/studio/people-office@2x.jpg);
+    }
+  }
   .container {
     width: 1158px;
     padding: 0 15px;
@@ -1002,6 +1029,11 @@ button {
     max-width: 1440px;
     height: 600px;
     padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/studio/people-office.jpg);
   }
   .hero-titleone {
     font-weight: 700;
