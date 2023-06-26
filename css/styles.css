@@ -665,6 +665,7 @@ button {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 5;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -675,7 +676,6 @@ button {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   transition: transform 250ms var(--cubic-bezier);
   transform: translateX(100%);
-  z-index: 5;
 }
 .flex-column {
   flex-direction: column;
@@ -721,8 +721,8 @@ button {
   flex-wrap: wrap;
   gap: 16px 24px;
   justify-content: flex-start;
-  margin-bottom: 48px;
   width: 95%;
+  margin-bottom: 48px;
 }
 .buttons-item {
   align-items: center;
@@ -752,8 +752,8 @@ button {
 .projects-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 48px;
+  justify-content: center;
 }
 .projects-item:hover,
 .projects-item:focus {
@@ -765,9 +765,9 @@ button {
   overflow: visible;
 }
 .projects-overlaytext {
-  display: none;
   position: absolute;
   top: 0;
+  display: none;
   width: 360px;
   height: 300px;
   padding: 40px 32px;
@@ -938,9 +938,9 @@ button {
     padding: 64px 0 96px;
   }
   .buttons-list {
-    justify-content: center;
     flex-wrap: nowrap;
     gap: 24px;
+    justify-content: center;
     margin-bottom: 64px;
   }
   .buttons-item {
@@ -949,10 +949,10 @@ button {
   }
   .projects-list {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: start;
+    flex-wrap: wrap;
     gap: 72px 24px;
+    justify-content: start;
   }
   .projects-item {
     width: calc((100% - 24px) / 2);
